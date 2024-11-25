@@ -1,8 +1,9 @@
-package kr.goldenmine.inumaker24backend
+package kr.goldenmine.inumaker24backend.app
 
-import kr.goldenmine.inumaker24backend.objs.InferenceResponse
-import kr.goldenmine.inumaker24backend.objs.InferenceResult
-import kr.goldenmine.inumaker24backend.objs.InferenceResultDTO
+import kr.goldenmine.inumaker24backend.convertMultipartFileToMultipartBody
+import kr.goldenmine.inumaker24backend.app.objs.InferenceResponse
+import kr.goldenmine.inumaker24backend.app.objs.InferenceResult
+import kr.goldenmine.inumaker24backend.app.objs.InferenceResultDTO
 import org.apache.coyote.BadRequestException
 import org.springframework.stereotype.Service
 import org.springframework.web.multipart.MultipartFile
@@ -10,7 +11,6 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.converter.scalars.ScalarsConverterFactory
 import java.sql.Timestamp
-import kotlin.math.floor
 
 @Service
 class InferenceService(

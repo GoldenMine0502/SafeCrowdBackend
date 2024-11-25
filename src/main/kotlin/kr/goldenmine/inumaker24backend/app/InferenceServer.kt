@@ -1,6 +1,6 @@
-package kr.goldenmine.inumaker24backend
+package kr.goldenmine.inumaker24backend.app
 
-import kr.goldenmine.inumaker24backend.objs.InferenceResponse
+import kr.goldenmine.inumaker24backend.app.objs.InferenceResponse
 import okhttp3.MultipartBody
 import retrofit2.Call
 import retrofit2.http.Multipart

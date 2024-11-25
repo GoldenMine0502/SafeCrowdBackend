@@ -1,6 +1,6 @@
-package kr.goldenmine.inumaker24backend
+package kr.goldenmine.inumaker24backend.app
 
-import kr.goldenmine.inumaker24backend.objs.InferenceResult
+import kr.goldenmine.inumaker24backend.app.objs.InferenceResult
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.data.jpa.repository.Query
 

@@ -1,4 +1,4 @@
-package kr.goldenmine.inumaker24backend.objs
+package kr.goldenmine.inumaker24backend.app.objs
 
 import java.sql.Timestamp
 

@@ -11,6 +11,10 @@ interface InferenceRepository: JpaRepository<InferenceResult, Long> {
                 FROM InferenceResult res2
                 GROUP BY res2.token
         )
+        ORDER BY 
+            CASE WHEN res.percent = 0 THEN 1 ELSE 0 END, 
+            res.percent,
+            res.token ASC
     """)
     fun getRecentInferenceResultByToken(): List<InferenceResult>
 }
